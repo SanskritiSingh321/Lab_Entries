@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Dev Lab Outputs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 30px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #007acc;
+      margin-bottom: 15px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      transition: transform 0.3s ease;
+    }
+    .box:hover {
+      transform: scale(1.2);
+    }
+    .flex-container {
+      display: flex;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Web Development Lab Outputs</h1>
+
+  <section>
+    <h2>Lab 1: Calendar</h2>
+    <table>
+      <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+      <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+      <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+      <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+      <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Lab 2: Registration Form</h2>
+    <form>
+      <label>Name: <input type="text" /></label><br><br>
+      <label>Email: <input type="email" /></label><br><br>
+      <label>Password: <input type="password" /></label><br><br>
+      <input type="submit" value="Register" />
+    </form>
+  </section>
+
+  <section>
+    <h2>Lab 3: Student Table</h2>
+    <table>
+      <tr><th>Name</th><th>Roll</th><th>Marks</th></tr>
+      <tr><td>Alice</td><td>101</td><td>92</td></tr>
+      <tr><td>Bob</td><td>102</td><td>87</td></tr>
+      <tr><td>Charlie</td><td>103</td><td>90</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Lab 4: Navigation Bar</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </section>
+
+  <section>
+    <h2>Lab 5: CSS Box Model</h2>
+    <div style="width:200px; padding:20px; border:5px solid #007acc; margin:10px; background:#eee;">
+      This is a box with padding, border and margin.
+    </div>
+  </section>
+
+  <section>
+    <h2>Lab 6: Flexbox Layout</h2>
+    <div class="flex-container">
+      <div class="box"></div>
+      <div class="box" style="background-color: lightseagreen;"></div>
+      <div class="box" style="background-color: lightblue;"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lab 7: CSS Grid Table</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+      <div style="background:#ccc; padding:20px;">Box 1</div>
+      <div style="background:#bbb; padding:20px;">Box 2</div>
+      <div style="background:#aaa; padding:20px;">Box 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lab 8: Dropdown Menu</h2>
+    <select>
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+    </select>
+  </section>
+
+  <section>
+    <h2>Lab 9: CSS Hover Animation</h2>
+    <div class="box"></div>
+  </section>
+
+  <section>
+    <h2>Lab 10: JavaScript Alert</h2>
+    <button onclick="alert('Hello! This is Lab 10')">Click Me</button>
+  </section>
+
+  <section>
+    <h2>Lab 11: JavaScript Form Validation</h2>
+    <form onsubmit="return validateForm()">
+      <input id="email" type="email" placeholder="Enter email" required />
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  <section>
+    <h2>Lab 12: Final Project Preview</h2>
+    <p>This section will showcase your final portfolio or mini project.</p>
+    <iframe src="https://example.com" width="100%" height="200px" style="border:1px solid #ccc;"></iframe>
+  </section>
+
+  <script>
+    function validateForm() {
+      const email = document.getElementById("email").value;
+      if (!email.includes("@")) {
+        alert("Please enter a valid email.");
+        return false;
+      }
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
+
